@@ -9,8 +9,8 @@ This application fetches weather forecast data from the OpenWeatherMap API based
 4. Display Weather Details: Provides details such as temperature, wind speed, and humidity.
 
 *Prerequisites*
-Internet connection
-Web browser
+- Internet connection
+- Web browser
 
 *How to Use*
 1. Open the index.html file in your web browser.
