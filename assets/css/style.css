@@ -37,8 +37,6 @@ h1 {
 #search-btn {
     z-index: 2;
     position: relative;
-    width: 25px;
-    height: 35px;
 }
 
 #cities {
@@ -50,4 +48,38 @@ h1 {
     float: right;
     width: 75%;
     padding: 10px;
+}
+
+#result-today {
+    width: 75%;
+    border-color: black, solid;
+}
+#five-days {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#one-day {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 125px
+}
+
+#date {
+    z-index: 4
+}
+
+#temp {
+    z-index: 3;
+}
+
+#wind {
+    z-index: 2;
+}
+
+#humidity {
+    z-index: 1;
 }
