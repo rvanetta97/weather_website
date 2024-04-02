@@ -83,7 +83,7 @@ form.addEventListener('submit', function (event) {
     //cityNames.push(cityName);
     //localStorage.setItem('cityNames', cityNames);
 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=301263d2318cc1692e32070fb90f7a59`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=301263d2318cc1692e32070fb90f7a59`)
         .then(response => response.json())
         .then(data => {
             var lat = data[0].lat;
