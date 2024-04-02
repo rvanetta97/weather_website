@@ -1,5 +1,6 @@
 const searchBtn = document.querySelector('#search-btn');
 const form = document.querySelector('#form')
+const results = document.querySelector('#results')
 
 function handleWeatherOutput(lat, lon) {
     fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&exclude=hourly,minutely,alerts&units=imperial&appid=301263d2318cc1692e32070fb90f7a59`)
@@ -41,7 +42,7 @@ function printResults(weatherData) {
             fivedays.appendChild(forecastItem);
         }
         //today's forcast
-        else if(dateString == today){
+        else if (dateString == today) {
             const cityName = document.querySelector('#search-input').value;
 
             const todayWeather = document.createElement("div")
@@ -52,7 +53,7 @@ function printResults(weatherData) {
 
             const currentTemperatureEl = document.createElement('p');
             currentTemperatureEl.textContent = `Temperature: ${item.main.temp} °F`;
-            
+
             const currentWindEl = document.createElement('p');
             currentWindEl.textContent = `Wind: ${item.wind.speed} MPH`;
 
@@ -65,18 +66,18 @@ function printResults(weatherData) {
     });
 
     //cityNames.forEach(item => {
-       //const searchedCities = document.createElement("div")
-       //searchedCities.id = "cities"
-       //cities = document.querySelector('cities')
-      // cities.append(searchedCities)
+    //const searchedCities = document.createElement("div")
+    //searchedCities.id = "cities"
+    //cities = document.querySelector('cities')
+    // cities.append(searchedCities)
 
-       // localStorage.setItem('cities', citiesName);
-   // });
+    // localStorage.setItem('cities', citiesName);
+    // });
 }
 
 form.addEventListener('submit', function (event) {
     console.log("submit")
-    event.preventDefault ();
+    event.preventDefault();
     var cityName = document.querySelector('#search-input').value;
     console.log(cityName)
 
