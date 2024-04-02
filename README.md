@@ -1,4 +1,4 @@
-Weather Forecast Application
+##Weather Forecast Application
 This application fetches weather forecast data from the OpenWeatherMap API based on the user's input of a city name. It displays weather information for the next five days excluding hourly and minutely forecasts.
 
 *Features
